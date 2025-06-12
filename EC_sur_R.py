@@ -42,13 +42,6 @@ class Point_Courbe_Elliptique():
     
     def __init__(self,E,C):
         x,y = C
-        '''if x != 'infini':  
-            while round(y**2 - x**3 - E.coef[0]*x - E.coef[1],2) !=0.0 :
-                x = input("Donner un point valide")
-                y = E.generation_point(x)[0]
-                signe = input("Quel signe pour y")
-                if signe == '-':
-                    y = -y'''
         self.coo = C
         self.courbe = E        
         
